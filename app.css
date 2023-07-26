@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+main {
+	width: 70vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-container {
+	width: 100%;
+	position: relative;
+}
+.image-container img {
+	width: 100%;
+	height: 100%;
+}
+.fa {
+	color: red;
+}
+.heart-animation {
+	display: block;
+	position: absolute;
+	animation: scaleAnimation 2s infinite alternate; /* Apply the animation */
+}
+
+/* Define the animation */
+@keyframes scaleAnimation {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.6);
+	}
+}
